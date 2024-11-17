@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e1e;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #2c2c2c;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.sidebar {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.avatar {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.username {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.timezone {
+    font-size: 0.9em;
+}
+
+.content {
+    padding: 20px;
+    flex-grow: 1;
+    color: #ffffff;
+}
+
+.content h1 {
+    margin-top: 0;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+.repos {
+    list-style: none;
+    padding: 0;
+}
+
+.repos li {
+    margin: 10px 0;
+}
+
+.repos a {
+    text-decoration: none;
+    color: #66b2ff;
+    transition: color 0.3s;
+}
+
+.repos a:hover {
+    color: #3399ff;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}
+
+h5, h6 {
+    margin: 10px 0;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.donation-address {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    background-color: #2c2c2c;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.donation-address p {
+    margin: 0;
+    font-size: 0.9em;;
+    word-break: break-all;
+    flex-grow: 1;
+}
+
+.copy-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.2s;
+}
+
+.copy-btn:hover {
+    transform: scale(1.1);
+}
+
+.clipboard-icon {
+    width: 20px;
+    height: 20px;
+    fill: #66b2ff;
+}
+
+h6 {
+    text-align: center;
+}
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
